@@ -122,16 +122,16 @@ project/
 # TODO List
 
 ## 1. Project Setup
-- [ ] Set up the project directory structure for a Flask application.
-- [ ] Create a Python virtual environment (`venv` or `conda`) for isolated development.
-- [ ] Install Flask and essential dependencies:
+- [ x ] Set up the project directory structure for a Flask application.
+- [ x ] Create a Python virtual environment (`venv` or `conda`) for isolated development.
+- [ x ] Install Flask and essential dependencies:
   - `flask`
   - `flask-admin` (for the admin panel)
   - `cadquery` (for geometry generation)
   - `numpy`
   - `pytest` (for testing)
-- [ ] Initialise a Git repository and push to GitHub using the desktop app.
-- [ ] Add a `.gitignore` file (e.g., ignore `__pycache__`, `.DS_Store`, virtual environments, STL files, etc.).
+- [ x ] Initialise a Git repository and push to GitHub using the desktop app.
+- [ x ] Add a `.gitignore` file (e.g., ignore `__pycache__`, `.DS_Store`, virtual environments, STL files, etc.).
 - [ ] Create a basic Flask project structure:
   - `app/` for core logic.
   - `templates/` and `static/` for web interface assets (if needed).
