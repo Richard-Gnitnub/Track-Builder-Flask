@@ -132,8 +132,8 @@ project/
   - `pytest` (for testing)
 - [ x ] Initialise a Git repository and push to GitHub using the desktop app.
 - [ x ] Add a `.gitignore` file (e.g., ignore `__pycache__`, `.DS_Store`, virtual environments, STL files, etc.).
-- [ ] Create a basic Flask project structure:
-  - `app/` for core logic.
+- [ x ] Create a basic Flask project structure:
+  - `track app/` for core logic.
   - `templates/` and `static/` for web interface assets (if needed).
 - [ ] Set up Docker for local deployment:
   - Create a `Dockerfile` to containerize the Flask application.
