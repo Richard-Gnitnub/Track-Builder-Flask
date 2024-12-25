@@ -1,9 +1,18 @@
-from flask import Blueprint
+from fastapi import APIRouter
+from pydantic import BaseModel
+from fastapi import FastAPI
+from .routes import router
 
-main = Blueprint('main', __name__)
+router = APIRouter()
 
-@main.route('/')
-def home():
-    return "Welcome to the Lightweight Track Builder!"
+class TrackParams(BaseModel):
+    length: float
+    width: float
 
-# Don't forget to register the blueprint in __init__.py
+@router.post("/generate-track")
+async def generate_track(params: TrackParams):
+    return {"message": f"Track generated with length {params.length} and width {params.width}"}
+
+
+app = FastAPI()
+app.include_router(router)
