@@ -14,8 +14,8 @@ Create a minimal Python-based engine to generate accurate model railway track, f
 
 ## MVP PLAN:
 
-- Build the MVP using Flask as the framework, replacing Django for a lightweight approach.
-- Create an admin panel using the Flask-Admin extension to manage track configurations and parameters.
+- Build the MVP using **FastAPI** for its performance, API-first design, and type validation capabilities.
+- Create an admin panel using FastAPI-compatible tools or a lightweight database editor.
 - Focus on bullhead rail based on REA standards.
 - Include chairs as part of the 3D model, as the rail sits within the chairs.
 - Design track as a combination of:
@@ -33,7 +33,7 @@ Create a minimal Python-based engine to generate accurate model railway track, f
 - The project will be developed using VS Code on a Windows laptop.
 - GitHub Desktop will be used for version management.
 - Instructions will provide explicit steps, including details on where files should be placed within the directory structure to ensure clarity and avoid ambiguity.
-- CLI will be windows Command Prompt
+- CLI will be windows Command Prompt.
 
 ## REFACTORING OUTLINE:
 
@@ -56,11 +56,11 @@ To comply with GNU GPLv3, include prominent attribution in the code comments and
   - Generate a report detailing identified problems.
   - Apply automated repairs or skip repairs based on user preference.
 - Include user-selectable parameters, such as **checkboxes** to skip inspection or repair for external workflows.
-- Reintroduce specialized features like Flat Bottom Rail, support to other localisations.
+- Reintroduce specialized features like chaired track and snap-fit designs after validating the core engine.
 
 ## END STATE:
 
-A Flask-based, modular, and maintainable track design engine that generates STL files for REA-standard bullhead rail track, including chairs and timbers, supported by a SQLite database for flexible data management. The rail itself is intended to be added manually by the user after 3D printing.
+A FastAPI-based, modular, and maintainable track design engine that generates STL files for REA-standard bullhead rail track, including chairs and timbers, supported by a SQLite database for flexible data management. The rail itself is intended to be added manually by the user after 3D printing.
 
 ## REFERENCE:
 https://github.com/Richard-Gnitnub/Templot5/blob/main/dxf_unit.pas
@@ -69,7 +69,6 @@ https://github.com/Richard-Gnitnub/Templot5/blob/main/dxf_unit.pas
 
 - Develop using Python 3.12.3 (latest version as of October 2023).
 - Attribution to Martin Wynne is essential to comply with GNU GPLv3.
-
 
 ---
 ## Core Application Functionality (MVP)
