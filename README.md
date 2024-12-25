@@ -135,9 +135,10 @@ project/
 - [ x ] Create a basic Flask project structure:
   - `track app/` for core logic.
   - `templates/` and `static/` for web interface assets (if needed).
-- [ ] Set up Docker for local deployment:
+- [ x ] Set up Docker for local deployment:
   - Create a `Dockerfile` to containerize the Flask application.
   - Create a `docker-compose.yml` file to manage dependencies and services.
+  -[ x ] Verify the application runs succesfully in Docker.
     
 ---
 
@@ -155,7 +156,8 @@ project/
 - [ ] Implement a function to generate geometry for straight tracks.
 - [ ] Integrate geometry generation with Flask routes.
 - [ ] Use CadQuery to generate STL files based on user input.
-- [ ] Validate the integrity of exported STL files using an STL viewer (e.g., MeshLab).
+- [ ] Validate STL file integrity using lightweight checks (e.g., watertightness).
+- [ ] Provide basic feedback if STL integrity checks fail during testing.
 - [ ] Provide a downloadable STL file through the Flask app.
 
 ### c. Admin Panel
@@ -199,6 +201,9 @@ project/
 - [ ] Create a troubleshooting guide for common issues.
 - [ ] Include detailed steps for setting up the Flask app locally and in Docker.
 
+- [ ] Optional mesh repair workflow for STL files as a user-selectable feature.
+- [ ] Support external and in-app repair options for STL files to enhance usability.
+- [ ] Provide visual and textual repair feedback for advanced users.
 ---
 
 ## 6. Future Enhancements (Post-MVP)

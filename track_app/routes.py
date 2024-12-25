@@ -6,4 +6,4 @@ main = Blueprint('main', __name__)
 def home():
     return "Welcome to the Lightweight Track Builder!"
 
-# Register blueprint in __init__.py
+# Don't forget to register the blueprint in __init__.py
