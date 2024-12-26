@@ -1,6 +1,6 @@
 # PROJECT: 
 
-Lightweight Track Builder (Rewrite of Templot by Martin Wynne)
+Lightweight Track Builder (Rewrite of Templot by Martin Wynne) AI assisted.
 
 ## GOAL:
 
